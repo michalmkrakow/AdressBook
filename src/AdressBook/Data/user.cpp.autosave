@@ -1,0 +1,27 @@
+#include "user.h"
+
+User::User(QObject *parent) :
+    QObject(parent)
+{
+}
+QString User::getLogin() const
+{
+    return login;
+}
+
+void User::setLogin(const QString &value)
+{
+    login = value;
+}
+QString User::getPassword() const
+{
+    return password;
+}
+
+void User::setPassword(const QString &value)
+{
+    password = value;
+}
+
+
+
